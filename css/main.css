@@ -1,0 +1,239 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: "YoungSerif";
+  src: local("YoungSerif"),
+    url("/assets/fonts/YoungSerif/youngserif.regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+
+:root {
+  --desertSand: #f0cfaa;
+  --caputMortuum: #5e2b27;
+}
+* {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.btn{
+  width: 202px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 35px;
+  border-radius: 10px;
+}
+.light-btn {
+  background-color: white;
+  border: 1px solid var(--caputMortuum);
+  color: var(--caputMortuum);
+}
+.dark-btn {
+  background-color: var(--caputMortuum);
+  border: 1px solid var(--caputMortuum);
+  color: var(--desertSand);
+}
+.light-btn:hover {
+  background-color: var(--caputMortuum);
+  color: var(--desertSand);
+}
+.dark-btn:hover {
+  background-color: white;
+  color: var(--caputMortuum);
+  border: 1px solid var(--caputMortuum);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/*HEADER SECTION*/
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 24px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--caputMortuum);
+}
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 36px;
+  z-index: 9999;
+}
+.navbar{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: -100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 8888;
+  transition: 0.3s;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+.nav-links {
+  font-size: 25px;
+  color: var(--caputMortuum);
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar.active {
+  top: 0;
+}
+
+/*HERO SECTION*/
+
+#hero_section {
+  width: 100%;
+  padding: 10px 60px;
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+h1 {
+  font-family: "YoungSerif", serif;
+  padding: 10px 0;
+  font-size: 36px;
+  color: var(--caputMortuum);
+}
+.divider {
+  width: 236px;
+  height: 2px;
+  margin: 10px auto;
+  background-color: var(--caputMortuum);
+}
+.hero-text p{
+  font-size: 21px;
+}
+.hero-text p span {
+  color: var(--caputMortuum);
+  font-weight: bold;
+}
+.hero-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/*ABOUT SECTION
+#about_section {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+h2{
+  font-family: "YoungSerif";
+  font-size: 36px;
+  color: var(--caputMortuum);
+}
+*/
+/*MEDIA QUERIES*/
+
+/*744px tablet small*/
+@media screen and (min-width: 744px) {
+  #hero_section {
+    padding: 25px 60px;
+  }
+  .hero-ctas {
+    flex-direction: row;
+  }
+}
+
+/*768px*/
+@media screen and (min-width: 744px) {
+  .menu-toggle {
+    display: none;
+  }
+  .navbar{
+    width: fit-content;
+    background: none;
+    position: static;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-menu {
+    flex-direction: row;
+  }
+}
+/*1024px tablet large*/
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 36px 32px;
+  }
+  #hero_section {
+    padding: 25px 62px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  #hero_section {
+    padding: 150px 250px;
+  }
+}
+
+/*1440px desktop*/
+@media screen and (min-width: 1440px) {
+  main{
+    max-width: 1440px;
+  }
+  header {
+    max-width: 1440px;
+    padding: 36px 32px;
+  }
+  #hero-section{
+    width: 1440px;
+    padding: 25px 270px;
+  }
+}
