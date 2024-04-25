@@ -29,7 +29,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-.btn{
+.btn {
   width: 202px;
   font-size: 25px;
   text-align: center;
@@ -57,11 +57,23 @@ body {
   color: var(--caputMortuum);
   border: 1px solid var(--caputMortuum);
 }
+.divider {
+  width: 263px;
+  height: 1px;
+  background-color: var(--caputMortuum);
+  margin: 10px;
+}
+h2 {
+  font-family: "YoungSerif";
+  font-size: 36px;
+  color: var(--caputMortuum);
+}
 
-main{
+main {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  max-width: 100%;
 }
 
 /*HEADER SECTION*/
@@ -85,7 +97,7 @@ header {
   font-size: 36px;
   z-index: 9999;
 }
-.navbar{
+.navbar {
   background-color: white;
   position: fixed;
   width: 100%;
@@ -122,9 +134,14 @@ header {
 
 #hero_section {
   width: 100%;
-  padding: 10px 60px;
+  padding: 10px 24px;
 }
-.hero-content{
+@media screen and (min-width: 375px) {
+  #hero_section {
+    padding: 10px 60px;
+  }
+}
+.hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,6 +150,7 @@ header {
 .hero-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 25px;
   text-align: center;
 }
@@ -142,13 +160,8 @@ h1 {
   font-size: 36px;
   color: var(--caputMortuum);
 }
-.divider {
-  width: 236px;
-  height: 2px;
-  margin: 10px auto;
-  background-color: var(--caputMortuum);
-}
-.hero-text p{
+
+.hero-text p {
   font-size: 21px;
 }
 .hero-text p span {
@@ -161,41 +174,50 @@ h1 {
   gap: 25px;
 }
 
-/*ABOUT SECTION
+/*ABOUT SECTION*/
 #about_section {
   width: 100%;
-  padding: 20px 10px;
+  padding: 10px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 25px;
+}
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about_section p {
+  font-size: 16px;
+}
+.tech-stacks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.tech-stacks ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px;
   text-align: center;
 }
-h2{
-  font-family: "YoungSerif";
-  font-size: 36px;
-  color: var(--caputMortuum);
+.tech-stacks ul i {
+  font-size: 45px;
 }
-*/
+
 /*MEDIA QUERIES*/
 
 /*744px tablet small*/
 @media screen and (min-width: 744px) {
-  #hero_section {
-    padding: 25px 60px;
-  }
-  .hero-ctas {
-    flex-direction: row;
-  }
-}
-
-/*768px*/
-@media screen and (min-width: 744px) {
   .menu-toggle {
     display: none;
   }
-  .navbar{
+  .navbar {
     width: fit-content;
     background: none;
     position: static;
@@ -206,7 +228,26 @@ h2{
   .nav-menu {
     flex-direction: row;
   }
+  #hero_section {
+    padding: 25px 60px;
+  }
+  .hero-ctas {
+    flex-direction: row;
+  }
+  #about_section {
+    padding: 25px 60px;
+  }
+  #about_section {
+    text-align: center;
+  }
+  #about_section p {
+    font-size: 18px;
+  }
+  .tech-stacks {
+    width: 300px;
+  }
 }
+
 /*1024px tablet large*/
 @media screen and (min-width: 1024px) {
   header {
@@ -214,6 +255,10 @@ h2{
   }
   #hero_section {
     padding: 25px 62px;
+  }
+  #about_section {
+    padding: 25px 133px;
+    text-align: center;
   }
 }
 
@@ -225,14 +270,18 @@ h2{
 
 /*1440px desktop*/
 @media screen and (min-width: 1440px) {
-  main{
+  main {
     max-width: 1440px;
   }
   header {
     max-width: 1440px;
     padding: 36px 32px;
   }
-  #hero-section{
+  #hero-section {
+    width: 1440px;
+    padding: 25px 270px;
+  }
+  #about_section {
     width: 1440px;
     padding: 25px 270px;
   }
