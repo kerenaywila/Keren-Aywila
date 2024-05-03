@@ -126,7 +126,7 @@ header {
   list-style: none;
   padding: 0;
 }
-.nav-links {
+.nav-link-style {
   font-size: 25px;
   color: var(--caputMortuum);
   text-decoration: none;
@@ -262,13 +262,13 @@ form {
   width: 100%;
   gap: 25px;
 }
-.contact-frame{
+.contact-frame {
   display: flex;
   flex-direction: column;
   gap: 25px;
   height: fit-content;
 }
-.submit{
+button[type="submit"] {
   margin: 0 auto;
 }
 .input-box {
@@ -284,6 +284,9 @@ textarea {
   border: 1px solid var(--caputMortuum);
   border-radius: 10px;
   padding: 10px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  color: var(--caputMortuum);
 }
 textarea {
   max-height: 160px;
@@ -297,7 +300,6 @@ footer {
   justify-content: end;
   align-items: center;
   width: 100%;
-  height: 200px;
   padding: 25px 24px;
 }
 .socials {

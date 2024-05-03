@@ -6,7 +6,7 @@ menuToggle.addEventListener("click", () => {
   navBar.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav-links").forEach((n) =>
+document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     menuToggle.classList.remove("active");
     navBar.classList.remove("active");
