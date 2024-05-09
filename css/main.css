@@ -30,8 +30,8 @@ body {
   font-weight: 400;
 }
 .btn {
-  width: 202px;
-  font-size: 25px;
+  width: 12.625rem;
+  font-size: 1.563rem;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
@@ -58,7 +58,7 @@ body {
   border: 1px solid var(--caputMortuum);
 }
 .divider {
-  width: 263px;
+  width: 16.438rem;
   height: 1px;
   background-color: var(--caputMortuum);
   margin: 10px;
@@ -71,7 +71,7 @@ body {
 }
 h2 {
   font-family: "YoungSerif";
-  font-size: 36px;
+  font-size: 2.25rem;
   color: var(--caputMortuum);
 }
 
@@ -93,14 +93,14 @@ header {
 }
 .logo {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--caputMortuum);
 }
 .menu-toggle {
   display: block;
   background: none;
   border: none;
-  font-size: 36px;
+  font-size: 2.25rem;
   z-index: 9999;
 }
 .navbar {
@@ -127,7 +127,7 @@ header {
   padding: 0;
 }
 .nav-link-style {
-  font-size: 25px;
+  font-size: 1.563rem;
   color: var(--caputMortuum);
   text-decoration: none;
   cursor: pointer;
@@ -163,12 +163,12 @@ header {
 h1 {
   font-family: "YoungSerif", serif;
   padding: 10px 0;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: var(--caputMortuum);
 }
 
 .hero-text p {
-  font-size: 21px;
+  font-size: 1.313rem;
 }
 .hero-text p span {
   color: var(--caputMortuum);
@@ -196,7 +196,7 @@ h1 {
   align-items: center;
 }
 #about_section p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .tech-stacks {
   display: flex;
@@ -213,7 +213,7 @@ h1 {
   text-align: center;
 }
 .tech-stacks ul i {
-  font-size: 45px;
+  font-size: 2.813rem;
 }
 
 /*PROJECT SECTION*/
@@ -239,7 +239,7 @@ h1 {
   gap: 10px;
 }
 .project-card p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .project-tech-stack {
   display: flex;
@@ -277,7 +277,7 @@ button[type="submit"] {
   gap: 9px;
 }
 label {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 input,
 textarea {
@@ -289,7 +289,7 @@ textarea {
   color: var(--caputMortuum);
 }
 textarea {
-  max-height: 160px;
+  max-height: 10rem;
 }
 
 /*FOOTER SECTION*/
@@ -313,7 +313,7 @@ footer {
   transition: 0.5s;
 }
 .copyright {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 /*MEDIA QUERIES*/
@@ -347,7 +347,7 @@ footer {
     text-align: center;
   }
   #about_section p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .project-grid {
     grid-template-columns: 1fr 1fr;
@@ -356,7 +356,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
   .project-tech-stacks {
-    width: 300px;
+    width: 18.75rem;
   }
 }
 
@@ -399,7 +399,7 @@ footer {
 
 @media screen and (min-width: 1140px) {
   #hero_section {
-    padding: 150px 250px;
+    padding: 0 250px;
   }
 }
 
@@ -429,7 +429,7 @@ footer {
     padding: 25px 150px;
   }
   .contact-frame button {
-    width: 202px;
+    width: 16.625rem;
   }
   footer {
     width: 1440px;
